@@ -1,8 +1,3 @@
 namespace tut2.caution;
 
-public class OverfillException : Exception
-{
-    public OverfillException(string message) : base(message)
-    {
-    }
-}
+public class OverfillException(string message) : Exception(message);
