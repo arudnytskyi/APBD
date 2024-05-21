@@ -1,0 +1,22 @@
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace tut8.Models
+{
+    public class Client
+    {
+        [Key]
+        public int IdClient { get; set; }
+        [Required]
+        public string FirstName { get; set; }
+        [Required]
+        public string LastName { get; set; }
+        [Required]
+        public string Email { get; set; }
+        [Required]
+        public string Telephone { get; set; }
+        [Required]
+        public string Pesel { get; set; }
+
+        public ICollection<ClientTrip> ClientTrips { get; set; }
+    }
+}
